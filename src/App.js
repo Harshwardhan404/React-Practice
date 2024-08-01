@@ -1,55 +1,33 @@
 // import './App.module.css';
+// A way of Importing Css
 // import Profile from './components/Navbar';
 
  import styles from './App.module.css'
+ // Another way of importing Css
 
 
 function App() {
 
+  let age =21
+
+  let isGreen = true;
+
+
+  if(age>=18){
+    return <>
+      <div className={styles.App}>Cana Pedro</div>
+      <div className style={(isGreen)?{color : 'green'}: {color : 'black'}}>I am colored Tag</div>
+      {isGreen && <button>this is a button</button>}
+    </>
+  }
+
   return (
    <>
    
- <User name = "Harsh" age={23} email = "pati.04@gmail.com"/>
- <User name = "Raj" age={12} email = "raj.04@gmail.com"/>
- <User name = "Shivam" age={25} email = "shivam.04@gmail.com"/> 
-
- <Company salary ={320000} position= "software Developer" company = "Google"/>
- <Company salary ={220000} position= "Tester" company = "Amazon"/>
- <Company salary ={310000} position= "DotNET Developer" company = "Meta Inc"/>
-
-
   <div className={styles.App}>Hello Pedro</div>
-  <div className={styles.Hello}>Hello Pedro</div>
+  <div className={styles.Hello}>Hello Harsh</div>
 
    </>
-  )
-}
-
-
-const User = (props)=>{
-return (
-<>
-
-<h2>{props.name}</h2>
-<h2>{props.age}</h2>
-<h2>{props.email}</h2>
-
-
-</>
-)
-}
-
-
-const Company = (props)=>{
-  return (
-  <>
-  <h1>{props.salary}</h1>
-  <h1>{props.position}</h1>
-  <h1>{props.company}</h1>
-
-
-
-  </>
   )
 }
 
