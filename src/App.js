@@ -1,57 +1,74 @@
-// import './App.module.css';
-// import Profile from './components/Navbar';
-
  import styles from './App.module.css'
 
 
 function App() {
 
-  return (
-   <>
+
+// const names = ["harsh", "Akshay", "Abhay", "Shivam"]
+
+  const Users = [
+    { name : "Jess", age : 12},
+     { name : "aK", age :32},
+      {name : "Harsh", age : 21}
    
- <User name = "Harsh" age={23} email = "pati.04@gmail.com"/>
- <User name = "Raj" age={12} email = "raj.04@gmail.com"/>
- <User name = "Shivam" age={25} email = "shivam.04@gmail.com"/> 
+  ]
 
- <Company salary ={320000} position= "software Developer" company = "Google"/>
- <Company salary ={220000} position= "Tester" company = "Amazon"/>
- <Company salary ={310000} position= "DotNET Developer" company = "Meta Inc"/>
-
-
-  <div className={styles.App}>Hello Pedro</div>
-  <div className={styles.Hello}>Hello Pedro</div>
-
-   </>
-  )
-}
-
-
-const User = (props)=>{
-return (
-<>
-
-<h2>{props.name}</h2>
-<h2>{props.age}</h2>
-<h2>{props.email}</h2>
-
-
-</>
-)
-}
-
-
-const Company = (props)=>{
   return (
-  <>
-  <h1>{props.salary}</h1>
-  <h1>{props.position}</h1>
-  <h1>{props.company}</h1>
+   <div className={styles.App}>
 
+    {/* {names.map((name,key)=>{
+      return <>
+        <h1 key={key}>{name}</h1>
+      </>
+    })}
 
+    {names.map((name, key)=>{
+      return <> <h2 key={key}>{name + "abhay"}</h2>  </>
+    })} */}
 
-  </>
+{/* 
+  <User /> */}
+
+    {Users.map((user)=>{
+      return <>{<User2 name = {user.name} age = {user.age}/>}</>
+    })}
+
+   </div>
   )
 }
+
+// const User =()=>{
+
+//   const Users = [
+//     { name : "Jess", age : 12},
+//      { name : "aK", age :32},
+//       {name : "Harsh", age : 21}
+   
+//   ]
+
+//   return (
+
+//   <>
+//   {Users.map((User)=>{
+//       return ( <div>
+
+//        <h1>{User.name} {User.age}</h1>  
+        
+//         </div>)
+//     })}
+  
+//   </>
+
+//   )
+
+// }
+
+const User2 = (props)=>{
+  return <h1> {props.name}  {props.age}</h1>
+}
+
+
+
 
 
 export default App;
