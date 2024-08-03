@@ -1,7 +1,56 @@
 
+body{
+    background-color: rgb(224, 240, 196);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
 
 .App{
-    color: brown;
-    font-size: larger;
-    background-color: aquamarine;
+    display: grid;
+    justify-content: center;
+    align-items: center;
 }
+
+.task {
+    border: 2px solid black;
+    border-radius: 4px;
+    width: 350px; 
+    height: 250px; 
+    padding: 10px; 
+    margin: 10px; 
+    box-sizing: border-box; 
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccef05;
+   
+  white-space: normal; 
+  }
+  
+
+
+  .button {
+    background-color: #14aeeb; /* Blue background */
+    color: white; /* White text */
+    border: 1px solid black; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    padding: 10px 20px; /* Vertical and horizontal padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+  }
+  
+  .button:hover {
+    background-color: #03e5e1; /* Darker blue on hover */
+  }
+  
+  .input{
+    width: 350px;    
+    height: 30px;
+  }
+
+  #butt{
+    width: 358px;    
+    height: 40px;
+  }
