@@ -12,7 +12,7 @@ const [error, setError] = useState("type Something");
 
   const handleOnChange = (event)=>{
   setCurrentTask(event.target.value)
-  setError(false);
+  setError("");
   }
 
   // Add Task
