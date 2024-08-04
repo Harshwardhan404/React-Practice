@@ -1,5 +1,4 @@
-// import './App.module.css';
-// import Profile from './components/Navbar';
+import './App.module.css';
 
 function App() {
 
